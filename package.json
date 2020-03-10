@@ -1,0 +1,17 @@
+{
+  "name": "deck-starter",
+  "version": "1.0.0",
+  "main": "deck.js",
+  "license": "MIT",
+  "author": "sayyid",
+  "scripts": {
+    "start": "mdx-deck deck.js",
+    "build": "mdx-deck build deck.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "help": "mdx-deck"
+  },
+  "devDependencies": {
+    "code-surfer": "2.0.0-alpha.10",
+    "mdx-deck": "^2.5.1"
+  }
+}
