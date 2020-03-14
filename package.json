@@ -6,7 +6,7 @@
   "author": "sayyid",
   "scripts": {
     "start": "mdx-deck deck.js",
-    "build": "mdx-deck build deck.js",
+    "build": "mdx-deck build deck.js && cp -a assets dist/assets",
     "test": "echo \"Error: no test specified\" && exit 1",
     "help": "mdx-deck"
   },
