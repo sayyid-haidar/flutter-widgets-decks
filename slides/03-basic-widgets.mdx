@@ -14,181 +14,271 @@ import { CodeSurferLayout } from "code-surfer";
 
 ---
 
-<div style={{display: "flex"}}>
-    <div>
-        <img src="../assets/simple-p-tag.png" style={{height: "20rem", marginRight: "1.3rem"}} />
-    </div>
-    <div>
-        <ul>
-        <Appear>
-            <li><b>Open Tag</b></li>
-            <li><b>Closing Tag</b></li>
-            <li><b>Content</b></li>
-            <li><b>Element/Tag Name</b></li>
-        </Appear>
-        </ul>
-    </div>
-</div>
-
----
-
 <CodeSurferLayout>
 
-```html title="Tag & Content" subtitle="Whats is?"
-Tag =
-Content =
-Element/Tag Name =
+```js title="Scaffold class"
+Scaffold(
+    // Implements the basic material design 
+    // visual layout structure.
+)
 ```
 
-```html title="Tag & Content" subtitle="Whats is?"
-Tag = sebuah penanda markup
-        <p></p>
-Content =
-Element/Tag Name =
-```
 
-```html title="Tag & Content" subtitle="Whats is?"
-Tag = sebuah penanda markup
-        <p></p>
-Content = data (baik berupa teks maupun lainnya) yang ingin di tandai
-        <p>Content</p>
-Element/Tag Name =
-```
-
-```html title="Tag & Content" subtitle="Ada yang masih bingung ?"
-Tag = sebuah penanda markup
-        <p></p>
-Content = data (baik berupa teks maupun lainnya) yang ingin di tandai
-        <p>Content</p>
-Element name = Maksud dari penanda
-        <p></p> (p merupakan Element name)
+```js 1:8 title="Scaffold class"
+Scaffold(
+    // Implements the basic material design 
+    // visual layout structure.
+    appBar: null,
+    body: null,
+    drawer: null,
+    bottomNavigatorBar: null,
+)
 ```
 
 </CodeSurferLayout>
 
 ---
 
-## <a>Aturan</a> dari tag dan content
+<CodeSurferLayout>
+
+```js title="AppBar class"
+AppBar(
+    // A material design app bar.
+)
+```
+
+```js 1:8 title="Scaffold class"
+AppBar(
+    // A material design app bar.
+    title: Text('Home'),
+    leading: null,
+    actions: null,
+)
+```
+
+</CodeSurferLayout>
 
 ---
 
-#### 1. Sebagian besar tag, <a>berpasangan</a>
+<CodeSurferLayout>
 
-<img src="../assets/rule_html_01.png" style={{height: "22rem"}} />
+```js title="SafeArea class"
+SafeArea(
+    // SafeArea in Screen
+)
+```
 
----
+```js 1:4 title="SafeArea class"
+SafeArea(
+    // SafeArea in Screen
+    child: null,
+)
+```
 
-#### 2. Tag <a>selalu</a> dikelilingi oleh kurung sudut
+```js 1:8 title="SafeArea class"
+SafeArea(
+    // SafeArea in Screen
+    child: null,
+    top: false,
+    bottom: false,
+    left: false,
+    right: false,
+)
+```
 
-<img src="../assets/rule_html_01.png" style={{height: "22rem"}} />
-
----
-
-#### 3. Tag penutup selalu dimulai dengan <a>garis miring "/"</a>
-
-<img src="../assets/rule_html_03.png" style={{height: "22rem"}} />
-
----
-
-#### 4. Tutup bagian tag <a>paling dalam</a>
-
-<img src="../assets/rule_html_04.png" style={{height: "22rem"}} />
-
----
-
-### Ini adalah 4 Aturan, tag dan content :
-
-<ol>
-    <li>
-        Sebagian besar tag, <a>berpasangan</a>
-    </li>
-    <li>
-        Tag <a>selalu</a> dikelilingi oleh kurung sudut
-    </li>
-    <li>
-        Tag penutup selalu dimulai dengan <a>garis miring "/"</a>
-    </li>
-    <li>
-        Tutup bagian tag <a>paling dalam</a>
-    </li>
-</ol>
+</CodeSurferLayout>
 
 ---
 
-### <a>Mari mengenal</a> tag yang sering kita pakai
+<CodeSurferLayout>
+
+```js title="Container class"
+Container(
+    // combines common painting, 
+    // positioning, and sizing widgets.
+)
+```
+
+```js 1:7 title="Container class"
+Container(
+    // combines common painting, 
+    // positioning, and sizing widgets.
+    height: 100.0,
+    decoration: null,
+    child:
+)
+```
+
+</CodeSurferLayout>
 
 ---
 
-### // Heading & Paragraph
+<CodeSurferLayout>
 
-+ <a>&lt;h1&gt; &lt;/h1&gt;</a>  Heading 1-6
-+ <a>&lt;p&gt; &lt;/p&gt;</a> Paragraph
-+ <a>&lt;button&gt; &lt;/button&gt;</a> Button
+```js title="Text class"
+Text(
+    // A run of text with a single style.
+)
+```
 
-<img src="../assets/sample_tag_h1.png" style={{height: "13rem", margin: "1rem"}}/>
+```js 1:4 title="Text class"
+Text(
+    // A run of text with a single style.
+    'string params',
+)
+```
 
-<img src="../assets/sample_atr_id.png" style={{height: "13rem", margin: "1rem"}}/>
+```js 1:8 title="Text class"
+Text(
+    // A run of text with a single style.
+    'string params',
+    style: TextStyle(
+        fontSize: 50.0,
+        color: Colors.red
+    )
+)
+```
 
----
-
-### // Font style
-
-+ <a>&lt;b&gt; &lt;/b&gt;</a> <b>Bold</b>
-+ <a>&lt;i&gt; &lt;/i&gt;</a> <i>Italic</i>
-+ <a>&lt;u&gt; &lt;/u&gt;</a> <u>Underline</u>
-
-<img src="../assets/sample_tag_font.png" style={{height: "13rem", margin: "1rem"}}/>
-
----
-
-### // Line
-
-+ <a>&lt;br&gt;</a> New line
-+ <a>&lt;hr&gt;</a> New line with Border buttom
-
-<img src="../assets/sample_tag_br.png" style={{height: "13rem", margin: "1rem"}}/>
-
-<img src="../assets/sample_tag_br.png" style={{height: "13rem", margin: "1rem"}}/>
-
----
-### // Lists
-
-+ <a>&lt;ul&gt; &lt;/ul&gt;</a> Unordered list (+)
-+ <a>&lt;ol&gt; &lt;/ol&gt;</a> Ordered list (Number)
-+ <a>&lt;li&gt; &lt;/li&gt;</a> List 
-
-<img src="../assets/sample_tag_ul.png" style={{height: "13rem", margin: "1rem"}}/>
-
-<img src="../assets/sample_tag_ol.png" style={{height: "13rem", margin: "1rem"}}/>
+</CodeSurferLayout>
 
 ---
 
-### // Divisions
+<CodeSurferLayout>
 
-+ <a>&lt;div&gt; &lt;/div&gt;</a> Divisions
-+ <a>&lt;span&gt; &lt;/span&gt;</a> span/Menjangkau (text)
+```js title="RichText class"
+RichText(
+    // A run of text with a single style.
+)
+```
 
-<img src="../assets/sample_tag_div.png" style={{height: "13rem", margin: "1rem"}}/>
+```js 1:7 title="RichText class"
+RichText(
+    // A run of text with a single style.
+    text: TextSpan(
+        text: 'string text',
+        style: null
+    ),
+)
+```
 
-<img src="../assets/sample_tag_span.png" style={{height: "13rem", margin: "1rem"}}/>
+```js 1:11 title="RichText class"
+RichText(
+    // A run of text with a single style.
+    text: TextSpan(
+        text: 'string text',
+        style: null
+    ),
+    children: <TextSpan>[
+        TextSpan(),
+        TextSpan(),
+    ]
+)
+```
+
+</CodeSurferLayout>
 
 ---
 
-### // Harus disertakan attribute
+<CodeSurferLayout>
 
-+ <a>&lt;a&gt; &lt;/a&gt;</a> Divisions
-+ <a>&lt;link&gt; &lt;/link&gt;</a> span/Menjangkau (text)
-+ <a>&lt;img&gt;</a> Image
-+ <a>&lt;script&gt; &lt;/script&gt;</a> Script
+```js title="Column class"
+Column(
+    // A widget that displays 
+    // its children in a vertical array.
+)
+```
 
-<img src="../assets/sample_tag_link.png" style={{width: "20rem", margin: "1rem"}}/>
+```js 1:7 title="Column class"
+Column(
+    // A widget that displays 
+    // its children in a vertical array.
+    crossAxisAlignment: CrossAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisSize: MainAxisSize.max
+)
+```
 
-<img src="../assets/sample_tag_a.png" style={{width: "20rem", margin: "1rem"}}/>
+```js 1:11 title="Column class"
+Column(
+    // A widget that displays 
+    // its children in a vertical array.
+    crossAxisAlignment: CrossAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisSize: MainAxisSize.max.
+    children: <Widget>[
+        Text('text'),
+        ....
+    ]
+)
+```
 
-<img src="../assets/sample_tag_img.png" style={{width: "20rem", margin: "1rem"}}/>
-
-<img src="../assets/sample_tag_script.png" style={{width: "20rem", margin: "1rem"}}/>
+</CodeSurferLayout>
 
 ---
 
-### Ada pertanyaan 🤔? 
+<CodeSurferLayout>
+
+```js title="Row class"
+Row(
+    // A widget that displays 
+    // its children in a horizontal array.
+)
+```
+
+```js 1:7 title="Row class"
+Row(
+    // A widget that displays 
+    // its children in a horizontal array.
+    crossAxisAlignment: CrossAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisSize: MainAxisSize.max
+)
+```
+
+```js 1:11 title="Row class"
+Row(
+    // A widget that displays 
+    // its children in a horizontal array.
+    crossAxisAlignment: CrossAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisSize: MainAxisSize.max.
+    children: <Widget>[
+        Text('text'),
+        ....
+    ]
+)
+```
+
+</CodeSurferLayout>
+
+---
+
+<CodeSurferLayout>
+
+```js title="RaisedButton class"
+RaisedButton(
+    // A material design "raised button".
+)
+```
+
+```js 1:6 title="RaisedButton class"
+RaisedButton(
+    // A material design "raised button".
+    onPressed: () {
+        // action
+    },
+)
+```
+
+```js 1:8 title="RaisedButton class"
+RaisedButton(
+    // A material design "raised button".
+    onPressed: () {
+        // action
+    },
+    child: null,
+    color: Colors.red
+)
+```
+
+</CodeSurferLayout>
