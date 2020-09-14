@@ -6,9 +6,9 @@ import { slides as introduction } from "./slides/00-introduction.mdx";
 import { slides as introductionFlutter } from "./slides/01-introduction-to-flutter.mdx";
 import { slides as whatIsFlutterWidget } from "./slides/02-whats-is-flutter-widget.mdx";
 import { slides as basicWidgets } from "./slides/03-basic-widgets.mdx";
-import { slides as attributeAndValue } from "./slides/04-attribute-and-value.mdx";
-import { slides as htmlInWebsite } from "./slides/05-html-in-web.mdx";
-import { slides as directory } from "./slides/06-directory.mdx";
+import { slides as materialWidgets } from "./slides/04-material-widgets.mdx";
+import { slides as textWidgets } from "./slides/05-text-widgets.mdx";
+import { slides as assetsWidgets } from "./slides/06-assets-widgets.mdx";
 import { slides as penutup } from "./slides/07-penutupan.mdx";
 
 // theme export for code-surfer
@@ -20,8 +20,8 @@ export const slides = [
   ...introductionFlutter,
   ...whatIsFlutterWidget,
   ...basicWidgets,
-  ...attributeAndValue,
-  ...htmlInWebsite,
-  ...directory,
+  ...materialWidgets,
+  ...textWidgets,
+  ...assetsWidgets,
   ...penutup
 ];

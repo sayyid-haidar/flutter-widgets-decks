@@ -16,82 +16,6 @@ import { CodeSurferLayout } from "code-surfer";
 
 <CodeSurferLayout>
 
-```js title="Scaffold class"
-Scaffold(
-    // Implements the basic material design 
-    // visual layout structure.
-)
-```
-
-
-```js 1:8 title="Scaffold class"
-Scaffold(
-    // Implements the basic material design 
-    // visual layout structure.
-    appBar: null,
-    body: null,
-    drawer: null,
-    bottomNavigatorBar: null,
-)
-```
-
-</CodeSurferLayout>
-
----
-
-<CodeSurferLayout>
-
-```js title="AppBar class"
-AppBar(
-    // A material design app bar.
-)
-```
-
-```js 1:8 title="Scaffold class"
-AppBar(
-    // A material design app bar.
-    title: Text('Home'),
-    leading: null,
-    actions: null,
-)
-```
-
-</CodeSurferLayout>
-
----
-
-<CodeSurferLayout>
-
-```js title="SafeArea class"
-SafeArea(
-    // SafeArea in Screen
-)
-```
-
-```js 1:4 title="SafeArea class"
-SafeArea(
-    // SafeArea in Screen
-    child: null,
-)
-```
-
-```js 1:8 title="SafeArea class"
-SafeArea(
-    // SafeArea in Screen
-    child: null,
-    top: false,
-    bottom: false,
-    left: false,
-    right: false,
-)
-```
-
-</CodeSurferLayout>
-
----
-
-<CodeSurferLayout>
-
 ```js title="Container class"
 Container(
     // combines common painting, 
@@ -105,73 +29,7 @@ Container(
     // positioning, and sizing widgets.
     height: 100.0,
     decoration: null,
-    child:
-)
-```
-
-</CodeSurferLayout>
-
----
-
-<CodeSurferLayout>
-
-```js title="Text class"
-Text(
-    // A run of text with a single style.
-)
-```
-
-```js 1:4 title="Text class"
-Text(
-    // A run of text with a single style.
-    'string params',
-)
-```
-
-```js 1:8 title="Text class"
-Text(
-    // A run of text with a single style.
-    'string params',
-    style: TextStyle(
-        fontSize: 50.0,
-        color: Colors.red
-    )
-)
-```
-
-</CodeSurferLayout>
-
----
-
-<CodeSurferLayout>
-
-```js title="RichText class"
-RichText(
-    // A run of text with a single style.
-)
-```
-
-```js 1:7 title="RichText class"
-RichText(
-    // A run of text with a single style.
-    text: TextSpan(
-        text: 'string text',
-        style: null
-    ),
-)
-```
-
-```js 1:11 title="RichText class"
-RichText(
-    // A run of text with a single style.
-    text: TextSpan(
-        text: 'string text',
-        style: null
-    ),
-    children: <TextSpan>[
-        TextSpan(),
-        TextSpan(),
-    ]
+    child: null,
 )
 ```
 
@@ -194,7 +52,7 @@ Column(
     // its children in a vertical array.
     crossAxisAlignment: CrossAxisAlignment.center,
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    mainAxisSize: MainAxisSize.max
+    mainAxisSize: MainAxisSize.max,
 )
 ```
 
@@ -204,7 +62,7 @@ Column(
     // its children in a vertical array.
     crossAxisAlignment: CrossAxisAlignment.center,
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    mainAxisSize: MainAxisSize.max.
+    mainAxisSize: MainAxisSize.max,
     children: <Widget>[
         Text('text'),
         ....
@@ -231,7 +89,7 @@ Row(
     // its children in a horizontal array.
     crossAxisAlignment: CrossAxisAlignment.center,
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    mainAxisSize: MainAxisSize.max
+    mainAxisSize: MainAxisSize.max,
 )
 ```
 
@@ -241,43 +99,11 @@ Row(
     // its children in a horizontal array.
     crossAxisAlignment: CrossAxisAlignment.center,
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    mainAxisSize: MainAxisSize.max.
+    mainAxisSize: MainAxisSize.max,
     children: <Widget>[
         Text('text'),
         ....
     ]
-)
-```
-
-</CodeSurferLayout>
-
----
-
-<CodeSurferLayout>
-
-```js title="RaisedButton class"
-RaisedButton(
-    // A material design "raised button".
-)
-```
-
-```js 1:6 title="RaisedButton class"
-RaisedButton(
-    // A material design "raised button".
-    onPressed: () {
-        // action
-    },
-)
-```
-
-```js 1:8 title="RaisedButton class"
-RaisedButton(
-    // A material design "raised button".
-    onPressed: () {
-        // action
-    },
-    child: null,
-    color: Colors.red
 )
 ```
 
